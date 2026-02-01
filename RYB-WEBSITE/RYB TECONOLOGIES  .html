@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RYB TECHNOLOGIES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* ===== GLOBAL ===== */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8fafc;
+            background-image:
+                linear-gradient(90deg, rgba(249, 115, 22, 0.04) 1px, transparent 1px),
+                linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+            background-size: 40px 40px;
+            color: #1e293b;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 5px 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0;
+            color: #f97316;
+            font-weight: 500;
+        }
+
+        /* ===== NAV ===== */
+        nav {
+            background-color: #020617;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #f97316;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #020617;
+            border-bottom: 3px solid #f97316;
+            padding-bottom: 8px;
+        }
+
+        .service-box {
+            margin-top: 25px;
+        }
+
+        .service-box h3 {
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* ===== CONTACT FORM ===== */
+        form {
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border: 1px solid #cbd5f5;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #f97316;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 25px;
+            background-color: #f97316;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #ea580c;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #020617;
+            color: #e5e7eb;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            section {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpeg" alt="RYB Technologies Logo">
+    <h1>RYB TECHNOLOGIES</h1>
+    <p>Precision Calibration & Validation Services</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        RYB Technologies provides professional calibration and validation services
+        with a strong focus on accuracy, reliability, and regulatory compliance.
+        We support pharmaceutical, engineering, and industrial environments.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+        <h3>Mechanical Calibrations</h3>
+        <ul>
+            <li>Pressure, Vacuum & Compound Gauges</li>
+            <li>Differential Pressure Gauges</li>
+            <li>Pressure Transmitters & Switches</li>
+            <li>RPM, Timers</li>
+        </ul>
+    </div>
+
+    <div class="service-box">
+        <h3>Thermal Calibrations</h3>
+        <ul>
+            <li>Temperature Sensors, Gauges & Thermometers</li>
+            <li>Temperature Transmitters & Controllers</li>
+            <li>Process Controllers & Chart Recorders</li>
+            <li>PLC & Temperature Data Loggers</li>
+            <li>Relative Humidity & Temperature</li>
+        </ul>
+    </div>
+
+    <div class="service-box">
+        <h3>Thermal Validations</h3>
+        <ul>
+            <li>Autoclaves, Dry Heat Sterilizers</li>
+            <li>Lyophylisers, Hot Air Ovens, Incubators</li>
+            <li>Tray Dryers, Muffle Furnace</li>
+            <li>Refrigerators, Deep & Ultra Low Freezers</li>
+            <li>Water Baths, Cold Rooms, Stability Chambers</li>
+        </ul>
+    </div>
+
+    <div class="service-box">
+        <h3>HVAC / Clean Room Validations</h3>
+        <ul>
+            <li>Air Velocity & ACPH</li>
+            <li>HEPA Filter Integrity Test</li>
+            <li>Non-Viable Particle Count & Recovery Test</li>
+            <li>Air Flow Pattern Test</li>
+            <li>LUX, Sound, RH & Pressure Balancing</li>
+        </ul>
+    </div>
+
+    <div class="service-box">
+        <h3>Compressed Air, PLC & Computer System Validations</h3>
+        <ul>
+            <li>Compressed Air Validation</li>
+            <li>PLC Validation</li>
+            <li>Computer System Validation</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>
+        <strong>Address:</strong><br>
+        Flat No. 102, Plot No. 37, Katari Arcade,<br>
+        Lake View Colony, Jai Bharat Nagar,<br>
+        Nizampet, Hyderabad – 500 090
+    </p>
+
+    <p><strong>Email:</strong> rybhyderabad@gmail.com</p>
+    <p><strong>Head Office:</strong> Bengaluru</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 RYB Technologies. All rights reserved.
+</footer>
+
+</body>
+</html>
